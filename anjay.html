@@ -1,6 +1,24 @@
 <html>
 <head>
   <title>tersesat kalian</title>
+  <style>
+    .btn-login{
+      margin-top: 10px;
+    }
+    .btn-login a {
+      background: #05d231;
+      padding: 5px 8px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: #fff;
+      margin-top: 10px;
+    }
+    .btn-login a:hover{
+      background: #fff;
+      color: #05d231;
+    }
+  </style>
+
 </head>
 <body bgcolor="black"></body>
 <body>
@@ -36,16 +54,20 @@
    </div>
 
    <div class="col-md-4" style="margin-top: 100px;">
-   <img src="jinx.jpg" width="320px" style="border-radius: 5px 5px 5px 5px;">
+   <img src="g1.png" width="320px" style="border-radius: 5px 5px 5px 5px;">
    <br>
    <br>
    <input ng-model="username" class="form-control" type="text" placeholder="Username...">
    <br>
    <input ng-model="password" class="form-control" type="password" placeholder="Password...">
    <br>
-   <button class="btn btn-default btn-block" ng-click="login()">masuk dek</button>
+   
+   <div class="btn-login">
+     <a href="www.html" class="btn btn-default btn-block" ng-click="login()">Masuk Dek</a>
+   </div>
+
    <br>
-   <span style="color:rgb(6, 153, 18)">{{masukan akun mu}}</span>
+   <a href="www.html" style="color:rgb(6, 153, 18)">{{masukan akun mu}}</a>
    </div>
 
    <div class="setelah">
@@ -58,6 +80,5 @@
   
  
    
-
 </body>
 </html>
